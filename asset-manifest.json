@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/BriannaRomina/static/css/main.ea62935a.chunk.css",
+    "main.js": "/BriannaRomina/static/js/main.40f797b6.chunk.js",
+    "main.js.map": "/BriannaRomina/static/js/main.40f797b6.chunk.js.map",
+    "runtime-main.js": "/BriannaRomina/static/js/runtime-main.c34d6670.js",
+    "runtime-main.js.map": "/BriannaRomina/static/js/runtime-main.c34d6670.js.map",
+    "static/js/2.69b4c9c8.chunk.js": "/BriannaRomina/static/js/2.69b4c9c8.chunk.js",
+    "static/js/2.69b4c9c8.chunk.js.map": "/BriannaRomina/static/js/2.69b4c9c8.chunk.js.map",
+    "index.html": "/BriannaRomina/index.html",
+    "precache-manifest.c03690e492cbd2dd1c65bd7356d47e80.js": "/BriannaRomina/precache-manifest.c03690e492cbd2dd1c65bd7356d47e80.js",
+    "service-worker.js": "/BriannaRomina/service-worker.js",
+    "static/css/main.ea62935a.chunk.css.map": "/BriannaRomina/static/css/main.ea62935a.chunk.css.map",
+    "static/js/2.69b4c9c8.chunk.js.LICENSE.txt": "/BriannaRomina/static/js/2.69b4c9c8.chunk.js.LICENSE.txt",
+    "static/media/styles.scss": "/BriannaRomina/static/media/LittleBaby.8a0c1ab4.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c34d6670.js",
+    "static/js/2.69b4c9c8.chunk.js",
+    "static/css/main.ea62935a.chunk.css",
+    "static/js/main.40f797b6.chunk.js"
+  ]
+}
