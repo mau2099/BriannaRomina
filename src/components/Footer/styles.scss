@@ -1,0 +1,21 @@
+.footer {
+  height: 200px;
+  background-color: #ff084a;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(33, 33, 33, 0.5), 3px 3px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h4,
+  h3,
+  h6 {
+    margin: 0;
+  }
+  img {
+    width: 100px;
+  }
+}

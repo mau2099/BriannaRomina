@@ -1,0 +1,13 @@
+@import '../../fonts.scss';
+
+html{
+  font-family: Babyground;
+  font-size: 30px;
+  background-color: pink;
+  color: 	#ff6289;
+  box-sizing: border-box;
+  background-image: radial-gradient(#fff 5%, transparent 1%),
+    radial-gradient(#fff 9%, #ffffff00 8%);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
