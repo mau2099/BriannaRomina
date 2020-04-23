@@ -1,4 +1,6 @@
+@import '../../fonts.scss';
 .footer {
+  font-family: LittleBaby;
   height: 200px;
   background-color: #ff084a;
   letter-spacing: 5px;
@@ -10,12 +12,42 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
   h4,
   h3,
   h6 {
     margin: 0;
   }
   img {
-    width: 100px;
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 150px;
+    font-size: 25px;
+    img {
+      width: 60px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  // .footer {
+  // }
+}
+@media screen and (max-width: 320px) {
+  .footer {
+    height: 130px;
+    font-size: 19px;
+
+    img {
+      width: 47px;
+    }
   }
 }

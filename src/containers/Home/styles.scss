@@ -3,6 +3,14 @@
 .wrapper {
   scroll-behavior: smooth;
   margin: 0 0 200px 0;
+  .video-container {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    .video {
+      width: 90%;
+    }
+  }
 }
 
 .each-event {
@@ -71,9 +79,10 @@
           overflow-y: auto;
         }
         .figure_date {
-          font-weight: bold;
+          color: #fc3468;
+          font-weight: 500;
           font-size: 1em;
-          // font-family: LittleBaby;
+          font-family: LittleBaby;
         }
       }
     }
@@ -97,3 +106,116 @@
   align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+  html {
+    body {
+      width: 100%;
+      font-size: 12px;
+    }
+  }
+
+  .wrapper {
+    margin: 0 0 200px 0;
+  }
+
+  .each-event {
+  }
+}
+@media screen and (max-width: 1024px) {
+  .each-event {
+    width: 450px;
+    &:nth-child(even) {
+      margin-left: calc(50% + 25px);
+    }
+    &:nth-child(odd) {
+      margin-left: calc(50% - 466px);
+      &:before {
+        left: calc(100% + 14px);
+      }
+      &:after {
+        left: calc(100% + 7px);
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .each-event {
+    width: 350px;
+    min-width: 350px;
+    font-size: 25px;
+    &:before {
+      left: -15px;
+    }
+    &:after {
+      left: -22px;
+    }
+
+    &:nth-child(even) {
+      margin-left: calc(50% + 15px);
+    }
+    &:nth-child(odd) {
+      // transform: rotate(45deg);
+      margin-left: calc(50% - 360px);
+      &:before {
+        left: calc(100% + 10px);
+      }
+      &:after {
+        left: calc(100% + 3px);
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 70px;
+    margin: 50px 0 30px 0px;
+    .each-event {
+      &:nth-child(n):not(:first-child) {
+        margin: 0;
+        &:before {
+          position: absolute;
+          left: 50%;
+          top: -50px;
+          height: 40px;
+          width: 2px;
+          background: #fc346838;
+          box-shadow: 2px 2px 6px white, 2px 1px 6px black;
+        }
+        &:after {
+          left: calc(50% - 7px);
+          position: absolute;
+          left: calc(50% - 7px);
+          top: -41px;
+          box-shadow: 2px 2px 6px #212121, 2px 1px 6px white;
+          // content: none;
+        }
+      }
+
+      &:nth-child(1) {
+        margin: 0;
+        &:before {
+          content: none;
+        }
+        &:after {
+          content: none;
+        }
+      }
+
+      &:before {
+        // content: none;
+      }
+      &:after {
+        // content: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .each-event {
+    width: 280px;
+    min-width: 280px;
+  }
+}

@@ -1,9 +1,51 @@
-header {
+// @import '../../fonts.scss';
+
+.header {
   font-size: 75px;
-}
-.title {
-  margin: 0;
   text-align: center;
+  margin: 0;
   text-shadow: 2px 2px 5px rgba(33, 33, 33, 1),
     3px 3px 6px rgba(255, 255, 255, 1);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+}
+.title {
+}
+
+.subtitle {
+  color: rgba(255, 147, 172, 1);
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    font-size: 26px;
+    .title {
+      margin: 0 0.3em;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    font-size: 25px;
+  }
 }
