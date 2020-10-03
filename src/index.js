@@ -5,10 +5,10 @@ import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import Home from './containers/Home';
 import Layout from './containers/Layout';
-
 ReactDOM.render(
   <React.StrictMode>
     <Layout>
+      {/* <SampleUseMemo /> */}
       <Home />
     </Layout>
   </React.StrictMode>,

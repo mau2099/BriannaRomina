@@ -1,81 +1,99 @@
-import React, { createRef } from 'react';
+import React, { createRef, useMemo, useEffect } from 'react';
 
 import './styles.scss';
-// import { Animated } from 'react-animated-css';
-import data from '../../data/db';
+import { data } from './../../data/db';
+
 
 const Home = () => {
-  const [state, setState] = React.useState(data);
-  const singleRefs = [];
+  const eventRefs = [];
   const refVideo = createRef();
 
-  const handleIntersectionObserver = entries => {
-    let entry = entries[0];
+  const handleIntersectionObserver = (entries) => {
+    const entry = entries[0];
 
     entry.target.className = entry.isIntersecting
       ? 'each-event animated'
       : 'each-event';
   };
 
-  const handleVideoObserver = entries => {
-    let entry = entries[0];
+  const handleVideoObserver = (entries) => {
+    const entry = entries[0];
 
     if (entry.isIntersecting) entry.target.play();
     else entry.target.pause();
   };
 
-  const observer = new IntersectionObserver(handleIntersectionObserver, {
-    threshold: 0.7,
-    root: null,
-    rootMargin: '0px 0px 0px 0px',
-  });
-
   const videoObserver = new IntersectionObserver(handleVideoObserver, {
-    threshold: 0.4,
+    threshold: 0,
   });
 
-  React.useEffect(() => {
-    (async () => {
-      // console.log('state', state);
-      singleRefs.forEach(ref => {
-        observer.observe(ref);
+  const createEventObservers = () => {
+    eventRefs.forEach((ref) => {
+      const observer = new IntersectionObserver(handleIntersectionObserver, {
+        threshold: 0.7,
+        root: null,
+        rootMargin: '0px 0px 0px 0px',
       });
-    })();
-    // console.log(refVideo);
+      observer.observe(ref);
+    });
+  };
 
+  useMemo(createEventObservers, [createEventObservers]);
+
+  useEffect(() => {
+    createEventObservers();
     videoObserver.observe(refVideo.current);
-  }, [setState]);
+  });
+
   return (
-    <section className="wrapper" alt="contenido">
-      <article className="video-container">
+    <section className='wrapper' alt='contenido'>
+      <article className='video-container'>
         <video
-          className="video"
+          className='video'
           ref={refVideo}
           loop
           controls
-          controlsList="nodownload"
+          controlsList='nodownload'
+          poster='https://kreuk2099.s3.amazonaws.com/poster_landing.jpg'
         >
           <source
-            src="https://kreuk2099.s3.amazonaws.com/presentation-brianna-romina.mp4"
-            type="video/mp4"
+            src='https://kreuk2099.s3.amazonaws.com/presentation-brianna-romina.mp4'
+            type='video/mp4'
           ></source>
         </video>
       </article>
-      {state.events.map(event => {
+      {data.events.map((event) => {
         return (
           <div
-            ref={ref => (singleRefs[singleRefs.length] = ref)}
-            className="each-event"
+            ref={(ref) => (eventRefs[eventRefs.length] = ref)}
+            className='each-event'
             key={event.id}
           >
-            <div className="event-description">
-              <figure className="figure">
-                <div className="flex-center">
-                  <img src={event.figure} alt={event.date} title={event.date} />
+            <div className='event-description'>
+              <figure className='figure'>
+                <div className='flex-center'>
+                  {event.type === 'mp4' ? (
+                    <video
+                      className='video'
+                      loop
+                      controls
+                      autoPlay={false}
+                      controlsList='nodownload'
+                      poster={event.poster}
+                    >
+                      <source src={event.figure} type='video/mp4' />
+                    </video>
+                  ) : (
+                    <img
+                      src={event.figure}
+                      alt={event.date}
+                      title={event.date}
+                    />
+                  )}
                 </div>
                 <figcaption>
-                  <div className="figure_date">{event.date}</div>
-                  <div className="figure_description">{event.description}</div>
+                  <div className='figure_date'>{event.date}</div>
+                  <div className='figure_description'>{event.description}</div>
                 </figcaption>
               </figure>
             </div>
