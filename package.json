@@ -1,5 +1,5 @@
 {
-  "homepage": "http://kreuk2099.github.io/briannaromina",
+  "homepage": "https://briannaromina.mau2099.dev",
   "name": "babynewborn2099",
   "version": "0.1.0",
   "private": true,
@@ -21,10 +21,6 @@
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kreuk2099/mau2099-website.git"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -1,4 +1,4 @@
-import date_01 from './../assets/images/date_01.jpeg';
+import date_01 from '../assets/images/date_01.jpeg';
 import date_02 from './../assets/images/date_02.jpeg';
 import date_03 from './../assets/images/date_03.jpeg';
 import date_04 from './../assets/images/date_04.jpeg';
