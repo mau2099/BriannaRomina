@@ -1,4 +1,5 @@
 import React from 'react';
+import { footer } from './../../data/db';
 import './styles.scss';
 
 const Footer = () => {
@@ -11,10 +12,7 @@ const Footer = () => {
         </span>
       </h4>
       <h3>Familia Garcia Sanchez</h3>
-      <img
-        src='https://kreuk2099.s3.amazonaws.com/penguin-footer.png'
-        alt='penguin'
-      />
+      <img src={footer.penguin} alt='penguin' />
     </footer>
   );
 };

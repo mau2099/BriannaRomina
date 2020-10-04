@@ -1,7 +1,7 @@
 import React, { createRef, useMemo, useEffect } from 'react';
 
 import './styles.scss';
-import { data } from './../../data/db';
+import { events, presentation } from './../../data/db';
 
 
 const Home = () => {
@@ -54,15 +54,15 @@ const Home = () => {
           loop
           controls
           controlsList='nodownload'
-          poster='https://kreuk2099.s3.amazonaws.com/poster_landing.jpg'
+          poster={presentation.poster}
         >
           <source
-            src='https://kreuk2099.s3.amazonaws.com/presentation-brianna-romina.mp4'
+            src={presentation.video}
             type='video/mp4'
           ></source>
         </video>
       </article>
-      {data.events.map((event) => {
+      {events.map((event) => {
         return (
           <div
             ref={(ref) => (eventRefs[eventRefs.length] = ref)}
