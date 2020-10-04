@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.4456d866.chunk.css",
-    "main.js": "/static/js/main.32461fe8.chunk.js",
-    "main.js.map": "/static/js/main.32461fe8.chunk.js.map",
+    "main.js": "/static/js/main.e58dd80d.chunk.js",
+    "main.js.map": "/static/js/main.e58dd80d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.caabefc2.js",
     "runtime-main.js.map": "/static/js/runtime-main.caabefc2.js.map",
-    "static/js/2.64f6656e.chunk.js": "/static/js/2.64f6656e.chunk.js",
-    "static/js/2.64f6656e.chunk.js.map": "/static/js/2.64f6656e.chunk.js.map",
+    "static/js/2.9c99cb7f.chunk.js": "/static/js/2.9c99cb7f.chunk.js",
+    "static/js/2.9c99cb7f.chunk.js.map": "/static/js/2.9c99cb7f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.445bba4ed0407238fcb51abe18422762.js": "/precache-manifest.445bba4ed0407238fcb51abe18422762.js",
+    "precache-manifest.b12354f1ae5e80ecaff63751d085072f.js": "/precache-manifest.b12354f1ae5e80ecaff63751d085072f.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.4456d866.chunk.css.map": "/static/css/main.4456d866.chunk.css.map",
-    "static/js/2.64f6656e.chunk.js.LICENSE.txt": "/static/js/2.64f6656e.chunk.js.LICENSE.txt",
+    "static/js/2.9c99cb7f.chunk.js.LICENSE.txt": "/static/js/2.9c99cb7f.chunk.js.LICENSE.txt",
     "static/media/styles.scss": "/static/media/LittleBaby.8a0c1ab4.ttf",
     "static/media/date_01.jpeg": "/static/media/date_01.40e97389.jpeg",
     "static/media/date_02.jpeg": "/static/media/date_02.092dc767.jpeg",
@@ -35,12 +35,15 @@
     "static/media/date_18.jpg": "/static/media/date_18.572c659a.jpg",
     "static/media/date_19.jpg": "/static/media/date_19.87b53361.jpg",
     "static/media/date_20.jpg": "/static/media/date_20.c9cd2a96.jpg",
-    "static/media/poster_date_11_1.jpg": "/static/media/poster_date_11_1.9cf595b4.jpg"
+    "static/media/penguin-footer.png": "/static/media/penguin-footer.053579b6.png",
+    "static/media/poster_date_11_1.jpg": "/static/media/poster_date_11_1.9cf595b4.jpg",
+    "static/media/poster_landing.jpg": "/static/media/poster_landing.4fb5480a.jpg",
+    "static/media/presentation-brianna-romina.mp4": "/static/media/presentation-brianna-romina.54f83c8e.mp4"
   },
   "entrypoints": [
     "static/js/runtime-main.caabefc2.js",
-    "static/js/2.64f6656e.chunk.js",
+    "static/js/2.9c99cb7f.chunk.js",
     "static/css/main.4456d866.chunk.css",
-    "static/js/main.32461fe8.chunk.js"
+    "static/js/main.e58dd80d.chunk.js"
   ]
 }
